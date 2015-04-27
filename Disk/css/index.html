@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Study Framework Documentation</title>
+        <link rel="stylesheet" href="bootstrap.css"/>
+        <link rel="stylesheet" href="responsive.css"/>
+        <link rel="stylesheet" href="all.css"/>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-inner">
+                <a class="brand" href="http://www.slimframework.com" target="_blank">Slim Framework Documentation</a>
+                <ul class="nav pull-right visible-tablet visible-desktop">
+                    <li><a href="http://www.slimframework.com" target="_blank">Visit Website <i class="icon-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid pts">
+    <div class="row-fluid">
+        <div class="span4">
+            <div class="well well-small">
+                <ul class="nav nav-list">
+                                        <li class="nav-header"><a href="#Getting-Started">Getting Started</a></li>
+                                        <li class="nav-page"><a href="#Installation">Installation</a></li>
+                                        <li class="nav-page"><a href="#System-Requirements">System Requirements</a></li>
+                                        <li class="nav-page"><a href="#Hello-World">Hello World</a></li>
+                    
+                                        <li class="nav-header"><a href="#Configuration">Configuration</a></li>
+                                        <li class="nav-page"><a href="#Configuration-Overview">Configuration Overview</a></li>
+                                        <li class="nav-page"><a href="#Application-Settings">Application Settings</a></li>
+                                        <li class="nav-page"><a href="#Application-Names-and-Scopes">Application Names and Scopes</a></li>
+                                        <li class="nav-page"><a href="#Application-Modes">Application Modes</a></li>
+                    
+                                        <li class="nav-header"><a href="#Routing">Routing</a></li>
+                                        <li class="nav-page"><a href="#Routing-Overview">Routing Overview</a></li>
+                                        <li class="nav-page"><a href="#GET-Routes">GET Routes</a></li>
+                                        <li class="nav-page"><a href="#POST-Routes">POST Routes</a></li>
+                                        <li class="nav-page"><a href="#PUT-Routes">PUT Routes</a></li>
+                                        <li class="nav-page"><a href="#DELETE-Routes">DELETE Routes</a></li>
+                                        <li class="nav-page"><a href="#OPTIONS-Routes">OPTIONS Routes</a></li>
+                                        <li class="nav-page"><a href="#PATCH-Routes">PATCH Routes</a></li>
+                                        <li class="nav-page"><a href="#Custom-HTTP-Methods">Custom HTTP Methods</a></li>
+                                        <li class="nav-page"><a href="#Route-Parameters">Route Parameters</a></li>
+                                        <li class="nav-page"><a href="#Route-Names">Route Names</a></li>
+                                        <li class="nav-page"><a href="#Route-Conditions">Route Conditions</a></li>
+                                        <li class="nav-page"><a href="#Route-Middleware">Route Middleware</a></li>
+                                        <li class="nav-page"><a href="#Route-Groups">Route Groups</a></li>
+                                        <li class="nav-page"><a href="#Route-Helpers">Route Helpers</a></li>
+                                        <li class="nav-page"><a href="#Route-URL-Rewriting">Route URL Rewriting</a></li>
+                    
+                                        <li class="nav-header"><a href="#Environment">Environment</a></li>
+                                        <li class="nav-page"><a href="#Environment-Overview">Environment Overview</a></li>
+                    
+                                        <li class="nav-header"><a href="#Request">Request</a></li>
+                                        <li class="nav-page"><a href="#Request-Overview">Request Overview</a></li>
+                                        <li class="nav-page"><a href="#Request-Method">Request Method</a></li>
+                                        <li class="nav-page"><a href="#Request-Headers">Request Headers</a></li>
+                                        <li class="nav-page"><a href="#Request-Body">Request Body</a></li>
+                                        <li class="nav-page"><a href="#Request-Variables">Request Variables</a></li>
+                                        <li class="nav-page"><a href="#Request-Cookies">Request Cookies</a></li>
+                                        <li class="nav-page"><a href="#Request-Paths">Request Paths</a></li>
+                                        <li class="nav-page"><a href="#XMLHttpRequest">XMLHttpRequest</a></li>
+                                        <li class="nav-page"><a href="#Request-Helpers">Request Helpers</a></li>
+                    
+                                        <li class="nav-header"><a href="#Response">Response</a></li>
+                                        <li class="nav-page"><a href="#Response-Overview">Response Overview</a></li>
+                                        <li class="nav-page"><a href="#Response-Status">Response Status</a></li>
+                                        <li class="nav-page"><a href="#Response-Headers">Response Headers</a></li>
+                                        <li class="nav-page"><a href="#Response-Body">Response Body</a></li>
+                                        <li class="nav-page"><a href="#Response-Cookies">Response Cookies</a></li>
+                                        <li class="nav-page"><a href="#Response-Helpers">Response Helpers</a></li>
+                    
+                                        <li class="nav-header"><a href="#View">View</a></li>
+                                        <li class="nav-page"><a href="#View-Overview">View Overview</a></li>
+                                        <li class="nav-page"><a href="#Rendering">Rendering</a></li>
+                                        <li class="nav-page"><a href="#Custom-Views">Custom Views</a></li>
+                                        <li class="nav-page"><a href="#View-Data">View Data</a></li>
+                    
+                                        <li class="nav-header"><a href="#HTTP-Caching">HTTP Caching</a></li>
+                                        <li class="nav-page"><a href="#HTTP-Caching-Overview">HTTP Caching Overview</a></li>
+                                        <li class="nav-page"><a href="#ETag">ETag</a></li>
+                                        <li class="nav-page"><a href="#Last-Modified">Last Modified</a></li>
+                                        <li class="nav-page"><a href="#Expires">Expires</a></li>
+                    
+                                        <li class="nav-header"><a href="#Middleware">Middleware</a></li>
+                                        <li class="nav-page"><a href="#Middleware-Overview">Middleware Overview</a></li>
+                                        <li class="nav-page"><a href="#How-to-Use-Middleware">How to Use Middleware</a></li>
+                                        <li class="nav-page"><a href="#How-to-Write-Middleware">How to Write Middleware</a></li>
+                    
+                                        <li class="nav-header"><a href="#Hooks">Hooks</a></li>
+                                        <li class="nav-page"><a href="#Hooks-Overview">Hooks Overview</a></li>
+                                        <li class="nav-page"><a href="#How-to-Use-Hooks">How to Use Hooks</a></li>
+                                        <li class="nav-page"><a href="#Default-Hooks">Default Hooks</a></li>
+                                        <li class="nav-page"><a href="#Custom-Hooks">Custom Hooks</a></li>
+                    
+                                        <li class="nav-header"><a href="#Flash-Messages">Flash Messages</a></li>
+                                        <li class="nav-page"><a href="#Flash-Messaging-Overview">Flash Messaging Overview</a></li>
+                                        <li class="nav-page"><a href="#Flash-Next">Flash Next</a></li>
+                                        <li class="nav-page"><a href="#Flash-Now">Flash Now</a></li>
+                                        <li class="nav-page"><a href="#Flash-Keep">Flash Keep</a></li>
+                    
+                                        <li class="nav-header"><a href="#Sessions">Sessions</a></li>
+                                        <li class="nav-page"><a href="#Native-Session-Store">Native Session Store</a></li>
+                                        <li class="nav-page"><a href="#Cookie-Session-Store">Cookie Session Store</a></li>
+                    
+                                        <li class="nav-header"><a href="#Logging">Logging</a></li>
+                                        <li class="nav-page"><a href="#Logging-Overview">Logging Overview</a></li>
+                                        <li class="nav-page"><a href="#Activate-Logging">Activate Logging</a></li>
+                                        <li class="nav-page"><a href="#Log-Levels">Log Levels</a></li>
+                                        <li class="nav-page"><a href="#Log-Writers">Log Writers</a></li>
+                    
+                                        <li class="nav-header"><a href="#Error-Handling">Error Handling</a></li>
+                                        <li class="nav-page"><a href="#Error-Handling-Overview">Error Handling Overview</a></li>
+                                        <li class="nav-page"><a href="#Error-Handler">Error Handler</a></li>
+                                        <li class="nav-page"><a href="#Not-Found-Handler">Not Found Handler</a></li>
+                                        <li class="nav-page"><a href="#Debugging">Debugging</a></li>
+                                        <li class="nav-page"><a href="#Output-Redirection">Output Redirection</a></li>
+                    
+                                        <li class="nav-header"><a href="#Dependency-Injection">Dependency Injection</a></li>
+                                        <li class="nav-page"><a href="#DI-Overview">DI Overview</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="span8">
+          <section class="page-section" id="Sessions">
+            <h1 class="page-header">Sessions <a class="bookmark" href="http://docs.slimframework.com/#Sessions"><i class="icon-bookmark"></i></a></h1>
+                                <article class="page-article" id="Native-Session-Store">
+                    <header>
+                        <h2 class="page-article-header">Native Session Store</h2>
+                    </header>
+                    <div class="alert alert-info">
+    <strong>Heads Up!</strong> Flash sion yourself.
+</div>
+                    <p>A Slim application does not presume anything about sessions. If you prefer to use a PHP session, you must configure
+and start a native PHP ssion cache limiter with:</p>
+
+<pre><code>&lt;?php
+session_cache_limiter(false);
+session_start();
+</code></pre>
+
+                    <div class="page-article-footer">
+                        <a class="btn" href="#top">Back to Top <i class="icon-arrow-up"></i></a>
+                    </div>
+                </article>
+                                <article class="page-article" id="Cookie-Session-Store">
+                    <header>
+                        <h2 class="page-article-header">Cookie Session Store</h2>
+                    </header>
+                    <p>You may also use the <code>\Slim\Middleware\SessionCookie</code> middleware are to your
+Slim application:</p>
+
+<pre><code>&lt;?php
+$app = new Slim();
+$app-&gt;add(new \Slim\Middleware\SessionCookie(array(
+)));
+</code></pre>
+
+<p>The second argument is optional; it is shown here so you can see the default middleware with zero changes to your application code.alternate session store.</p>
+
+<div class="alert">
+  <strong>PLEASE NOTE:</strong> Client-side storagssion information
+  on your server.
+</div>
+
+                    <div class="page-article-footer">
+                        <a class="btn" href="#top">Back to Top <i class="icon-arrow-up"></i></a>
+                    </div>
+                </article>
+                
+          </section>
+      </div>
+    </div>
+</div>
+
+
+        <script src="/A/jquery-1.9.0.min.js"></script>
+    </body>
+</html>

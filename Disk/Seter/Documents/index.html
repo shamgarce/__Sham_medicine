@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Slim Framework</title>
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="css/allindex.css"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <header class="site-header">
+                    <div class="site-title"><a href="/">Seter</a></div>
+                    <div class="site-slogan">单例集成组件 for PHP</div>
+                </header>
+
+<div class="row">
+    <div class="col-md-12">
+        <p class="lead">
+            Seter 集成了众多单例组件,可以在php工程中使用;.
+        </p>
+        <pre class="language-php"><code>&lt;?php
+$app = new \Slim\Slim();
+$app-&gt;get('/hello/:name', function ($name) {
+    echo "Hello, $name";
+});
+$app-&gt;run();</code></pre>
+    </div>
+</div>
+
+<div class="row section">
+    <div class="col-md-3">
+        <a class="slim-button" href="http://www.weibo.com/shampeak"><i class="fa fa-bullhorn"></i><span>Blog</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="https://github.com/shampeak/Sham_Seter" target="_blank"><i class="fa fa-book"></i><span>Github</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="../Sample/" target="_blank"><i class="fa fa-question-circle"></i><span>Sample</span></a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="slim-button" href="/Documents/Documents.html"><i class="fa fa-wrench"></i><span>Documents</span></a>
+    </div>
+</div>
+
+<div class="alert alert-info" style="margin-top: -10px; margin-bottom: 30px">
+    <i class="fa fa-smile-o"></i> 请保留版权信息</div>
+
+
+
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>下载 &amp; 安装</span></h1>
+        <p>
+            下载压缩包,解压文件,把Seter放置到任意的目录下,例如跟下;</p>
+        <p>第一步,包含文件</p>
+        <pre><code class="language-bash">composer require slim/slim</code></pre>
+        <p>
+        下一步:包含Seter文件,开始使用. </p>
+        <pre><code class="language-php">&lt;?php
+require 'vendor/autoload.php';</code></pre>
+        <p class="center">
+            <a class="btn btn-primary btn-lg" href="https://github.com/slimphp/Slim/releases" target="_blank">Download ZIP</a>
+        </p>
+    </div>
+</div>
+
+<div class="row section">
+    <div class="col-md-12">
+        <h1 class="divider"><span>路线图</span></h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2><i class="fa fa-plane"></i> Seter模块</h2>
+                <p>
+                    Slim provides a powerful router that maps
+                    route callbacks to specific HTTP request
+                    methods and URIs. It supports route segment
+                    parameters and pattern matching.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2><i class="fa fa-dot-circle-o"></i> 全局变量模块</h2>
+                <p>
+                    Build your application with custom concentric
+                    middleware to tweak the HTTP request and response
+                    objects before and after your Slim app runs.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2><i class="fa fa-exchange"></i> MysqlClass模块</h2>
+                <p>
+                    Slim has easy-to-use request and response abstractions
+                    that let you inspect and manipulate
+                    HTTP messages' method, status, URI, headers, cookies, and body.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2><i class="fa fa-group"></i> Memcacheclass模块</h2>
+                <p>
+                    Slim provides first-class session support.
+                    It persists session data using
+                    military grade encryption. Slim also
+                    enables "flash" messages across requests.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2><i class="fa fa-database"></i> ApcClass模块</h2>
+                <p>
+                    Slim provides helper methods that make client-side
+                    HTTP caching easier. It helps you work with
+                    the <code>Expires</code>, <code>Last-Modified</code>,
+                    and <code>ETag</code> headers.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h2><i class="fa fa-lock"></i> 其他</h2>
+                <p>
+                    Slim has super-secure cryptography
+                    using military-grade encryption. Slim uses
+                    your unique key to encrypt session and cookie
+                    data before persisting data to disk.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="site-footer">
+        <p>
+                    Created by <a href="http://www.weibo.com/shampeak">Shampeak</a></p>
+</footer>
+            </div>
+        </div>
+
+    </body>
+</html>
+

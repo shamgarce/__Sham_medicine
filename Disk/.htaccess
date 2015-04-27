@@ -1,0 +1,53 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^ index.php [QSA,L]
+
+
+RewriteEngine on
+
+RewriteRule ^v1$ v1.php [L]
+RewriteRule ^v1/(.*)$ v1.php/$1 [L]
+
+RewriteRule ^D$ D.php [L]
+RewriteRule ^D/(.*)$ D.php/$1 [L]
+
+RewriteRule ^v3$ v3.php [L]
+RewriteRule ^v3/(.*)$ v3.php/$1 [L]
+
+RewriteRule ^v5$ v5.php [L]
+RewriteRule ^v5/(.*)$ v5.php/$1 [L]
+
+RewriteRule ^Doc$ Doc.php [L]
+RewriteRule ^Doc/(.*)$ Doc.php/$1 [L]
+
+RewriteRule ^Man$ Man.php [L]
+RewriteRule ^Man/(.*)$ Man.php/$1 [L]
+
+RewriteRule ^M$ M.php [L]
+RewriteRule ^M/(.*)$ M.php/$1 [L]
+
+RewriteRule ^Te$ Te.php [L]
+RewriteRule ^Te/(.*)$ Te.php/$1 [L]
+
+RewriteRule ^W$ W.php [L]
+RewriteRule ^W/(.*)$ W.php/$1 [L]
+
+
+RewriteRule ^V1es$ V1es.php [L]
+RewriteRule ^V1es/(.*)$ V1es.php/$1 [L]
+
+RewriteRule ^DEO$ DEO.php [L]
+RewriteRule ^DEO/(.*)$ DEO.php/$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteRule ^(.*)$ /index.php/$1 [L]
